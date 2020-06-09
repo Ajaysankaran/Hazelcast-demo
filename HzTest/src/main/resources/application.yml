@@ -1,0 +1,27 @@
+server:
+  servlet:
+    context-path: /demo
+  port: 9080
+spring:
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+    driver-class-name:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+#    properties:
+#      hibernate:
+#        cache:
+#          use_second_level_cache: true
+#          use_query_cache: true
+#          region:
+#            facotry_class: com.hazelcast.hibernate.HazelcastCacheRegionFactory
+  main:
+    allow-bean-definition-overriding: true
+
