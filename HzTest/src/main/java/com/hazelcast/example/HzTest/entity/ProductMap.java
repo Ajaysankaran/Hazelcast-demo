@@ -11,8 +11,8 @@ import java.io.Serializable;
 @Entity
 @KeySpace("ProductMap")
 @Table
-@Cacheable
-@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
+//@Cacheable
+//@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 public class ProductMap implements Serializable {
 
     @Id
